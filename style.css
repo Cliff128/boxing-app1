@@ -57,3 +57,15 @@ h1, h2 {
   justify-content: center;
   align-items: center;
 }
+/* Logo 样式 */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 200px; /* 调整 Logo 宽度 */
+  height: auto; /* 高度自适应 */
+  border-radius: 10px; /* 圆角 */
+}
