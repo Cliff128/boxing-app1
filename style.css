@@ -1,71 +1,47 @@
-/* 基本布局 */
-body, html {
+/* 设置整个页面的样式 */
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* 页面背景色 */
+  text-align: center; /* 内容居中 */
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-button {
-  background-color: #007AFF;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-button:hover {
-  background-color: #005bb5;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-/* 用户信息 */
-.user-info img.logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-/* 设备连接 */
-.connection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* PK模式 */
-.pk {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/* Logo 样式 */
+/* Logo 容器样式 */
 .logo-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  align-items: center;
+  margin-top: 50px;
+  background: linear-gradient(45deg, #002366, #0047AB); /* 渐变背景 */
+  padding: 20px;
+  border-radius: 10px; /* 圆角 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 阴影效果 */
 }
 
+/* Logo 图片样式 */
 .logo {
-  width: 200px; /* 调整 Logo 宽度 */
-  height: auto; /* 高度自适应 */
-  border-radius: 10px; /* 圆角 */
+  width: 250px; /* 调整 Logo 宽度 */
+  height: auto; /* 保持高度自适应 */
+  filter: brightness(0) invert(1); /* 图片反色（黑色变白色） */
+}
+
+/* 内容样式 */
+.content {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #0047AB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #002366;
 }
