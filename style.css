@@ -3,14 +3,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4; /* 页面背景颜色 */
+  background-color: #ffffff; /* 设置背景为纯白色 */
   text-align: center; /* 内容居中 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* 内容从顶部开始 */
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #0099cc, #33cc99); /* 渐变背景 */
+  height: 100vh; /* 页面全屏显示 */
 }
 
 /* Logo 容器样式 */
@@ -20,21 +19,19 @@ body {
   align-items: center;
   background-color: transparent; /* 透明背景 */
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 阴影效果 */
-  margin-top: 20px; /* Logo 离顶部一定距离 */
-  margin-bottom: 40px; /* Logo 和下面内容之间的空隙 */
+  margin-top: 40px; /* Logo 离顶部有一定距离 */
+  margin-bottom: 20px; /* Logo 和文字之间的间隙 */
 }
 
-/* Logo 图片样式 */
+/* Logo 图片样式，缩小 Logo 尺寸 */
 .logo {
-  width: 200px; /* Logo 宽度 */
+  width: 150px; /* 将 Logo 缩小为 150px */
   height: auto;
-  filter: brightness(0) invert(1); /* 如果图片是黑色，可以反色成白色 */
 }
 
 /* 页面内容样式 */
 .content {
-  color: #ffffff;
+  color: #000000; /* 文字颜色为黑色 */
   margin-top: 20px;
 }
 
