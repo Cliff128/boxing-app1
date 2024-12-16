@@ -2,9 +2,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4; /* 页面背景色 */
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* 背景颜色 */
   text-align: center; /* 内容居中 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0099cc, #33cc99); /* 渐变背景 */
 }
 
 /* Logo 容器样式 */
@@ -12,36 +18,55 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  background: linear-gradient(45deg, #002366, #0047AB); /* 渐变背景 */
+  background-color: #ffffff; /* 背景颜色 */
+  border-radius: 50%; /* 圆形容器 */
   padding: 20px;
-  border-radius: 10px; /* 圆角 */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  margin-bottom: 40px;
 }
 
 /* Logo 图片样式 */
 .logo {
-  width: 250px; /* 调整 Logo 宽度 */
-  height: auto; /* 保持高度自适应 */
-  filter: brightness(0) invert(1); /* 图片反色（黑色变白色） */
+  width: 200px; /* Logo 宽度 */
+  height: auto;
+  filter: brightness(0) invert(1); /* 如果图片是黑色，可以反色成白色 */
 }
 
-/* 内容样式 */
+/* 页面内容样式 */
 .content {
+  color: #ffffff;
   margin-top: 20px;
 }
 
+/* 标题样式 */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 按钮样式 */
+.buttons {
+  margin-top: 30px;
+}
+
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 10px;
-  background-color: #0047AB;
-  color: white;
+  font-size: 18px;
+  background-color: #ffcc00; /* 黄色按钮 */
+  color: #333;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
-  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #002366;
+  background-color: #ff9900; /* 鼠标悬停时变色 */
+  transform: translateY(-4px); /* 上浮效果 */
+}
+
+button:active {
+  transform: translateY(2px); /* 按钮按下时有点“压下去”的效果 */
 }
