@@ -7,7 +7,7 @@ body {
   text-align: center; /* 内容居中 */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* 内容从顶部开始 */
   align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, #0099cc, #33cc99); /* 渐变背景 */
@@ -22,7 +22,8 @@ body {
   border-radius: 50%; /* 圆形容器 */
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* 阴影效果 */
-  margin-bottom: 40px;
+  margin-top: 20px; /* Logo 离顶部一定距离 */
+  margin-bottom: 40px; /* Logo 和下面内容之间的空隙 */
 }
 
 /* Logo 图片样式 */
